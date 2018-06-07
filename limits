@@ -6,22 +6,25 @@ from math import *
 
 # Equation Format: aX^A+bx^B+cx^C+dx^D
 
-a = 5
-A = 3
-b = 4
-B = 2
-c = -2
-C = 1
-d = 8
+a = 1
+A = -1
+b = 0
+B = 0
+c = 0
+C = 0
+d = 0
 D = 0
 
-p = input("Enter a point for the limit")
+p = int(input("Enter a point for the limit"))
+h= int(0.000001)
 
-leftlimit = 0
-atThePoint = (a*(p**A))+(b*(p**B))+(c*(p**C))+ (d*(p**D)) 
-rightlimit = 0
+leftLimit = (a*((p-h)**A))+(b*((p-h)**B))+(c*((p-h)**C))+(d*((p-h)**D)) 
+atThePoint = (a*(p**A))+(b*(p**B))+(c*(p**C))+(d*(p**D)) 
+rightLimit = (a*((p-h)**A))+(b*((p-h)**B))+(c*((p-h)**C))+(d*((p-h)**D)) 
 
 print(atThePoint)
+print(leftLimit)
+print(rigtLimit)
 
 """
 if :
