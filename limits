@@ -25,7 +25,6 @@ D = 0
 leftLimit = (a*((x-h)**A))+(b*((x-h)**B))+(c*((x-h)**C))+(d*((x-h)**D)) 
 atThePoint = (a*(x**A))+(b*(x**B))+(c*(x**C))+(d*(x**D)) 
 rightLimit = (a*((x+h)**A))+(b*((x+h)**B))+(c*((x+h)**C))+(d*((x+h)**D)) 
-
 print(eval(equation))
 
 print(atThePoint)
