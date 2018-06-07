@@ -16,15 +16,15 @@ d = 0
 D = 0
 
 p = int(input("Enter a point for the limit"))
-h= int(0.000001)
+h= int(0.1)
 
 leftLimit = (a*((p-h)**A))+(b*((p-h)**B))+(c*((p-h)**C))+(d*((p-h)**D)) 
 atThePoint = (a*(p**A))+(b*(p**B))+(c*(p**C))+(d*(p**D)) 
-rightLimit = (a*((p-h)**A))+(b*((p-h)**B))+(c*((p-h)**C))+(d*((p-h)**D)) 
+rightLimit = (a*((p+h)**A))+(b*((p+h)**B))+(c*((p+h)**C))+(d*((p+h)**D)) 
 
 print(atThePoint)
 print(leftLimit)
-print(rigtLimit)
+print(rightLimit)
 
 """
 if :
