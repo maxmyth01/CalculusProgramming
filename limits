@@ -1,1 +1,30 @@
+#Max Low
+#6-7-18
+#Calculus Programming -- Have the User have a section to edit the function and then take the limit at a point through brute force
 
+from math import *
+
+# Equation Format: aX^A+bx^B+cx^C+dx^D
+
+a = 5
+A = 3
+b = 4
+B = 2
+c = -2
+C = 1
+d = 8
+D = 0
+
+p = input("Enter a point for the limit")
+
+leftlimit = 0
+atThePoint = (a*(p**A))+(b*(p**B))+(c*(p**C))+ (d*(p**D)) 
+rightlimit = 0
+
+print(atThePoint)
+
+"""
+if :
+    print("The limit does exist at p and is" )
+    
+"""
