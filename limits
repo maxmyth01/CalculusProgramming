@@ -4,6 +4,11 @@
 
 from math import *
 
+x = int(input("Enter a point for the limit"))
+h = 0.0000000001
+equation = input("Enter an equation")
+
+
 # Equation Format: aX^A+bx^B+cx^C+dx^D
 
 a = 1
@@ -15,12 +20,13 @@ C = 0
 d = 0
 D = 0
 
-p = int(input("Enter a point for the limit"))
-h= int(0.1)
 
-leftLimit = (a*((p-h)**A))+(b*((p-h)**B))+(c*((p-h)**C))+(d*((p-h)**D)) 
-atThePoint = (a*(p**A))+(b*(p**B))+(c*(p**C))+(d*(p**D)) 
-rightLimit = (a*((p+h)**A))+(b*((p+h)**B))+(c*((p+h)**C))+(d*((p+h)**D)) 
+
+leftLimit = (a*((x-h)**A))+(b*((x-h)**B))+(c*((x-h)**C))+(d*((x-h)**D)) 
+atThePoint = (a*(x**A))+(b*(x**B))+(c*(x**C))+(d*(x**D)) 
+rightLimit = (a*((x+h)**A))+(b*((x+h)**B))+(c*((x+h)**C))+(d*((x+h)**D)) 
+
+print(eval(equation))
 
 print(atThePoint)
 print(leftLimit)
