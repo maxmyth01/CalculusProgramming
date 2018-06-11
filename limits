@@ -30,16 +30,16 @@ y3 =0
 y4 =0
 
 #used to prevent excessive skipping in the code where discontinuities are present
-citicalPtorDiscontinuity = True
+criticalPtorDiscontinuity = False
 
 #doubble slash rounds down
 total = (b1-a1)//numberSlopes
 for i in range (0, total):
     
     if abs(a1+((k+1)*numberSlopes)+h) < 0.0000001: #if the abs of the next point is virtually zero skip over it to avoid often non-diffenercibly pts
-        print("citicalPtorDiscontinuity")
+        print("criticalPtorDiscontinuity")
         k+=2
-        citicalPtorDiscontinuity = False
+        criticalPtorDiscontinuity = True
         
     x = (a1+(k*numberSlopes)+h)
     y1 = eval(equation)
@@ -64,9 +64,9 @@ for i in range (0, total):
     print(slope1)
     print(slope2)
     print(" ")
-    if citicalPtorDiscontinuity == True:
+    if criticalPtorDiscontinuity == False:
         k+=1
-    citicalPtorDiscontinuity == True
+    criticalPtorDiscontinuity == False
    
    
 
