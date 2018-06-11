@@ -15,6 +15,7 @@ slope1 = 0
 slope2 = 0
 k=0
 equation = input("Enter an equation")
+x = 0 
 y1 =0
 y2 =0
 y3 =0
@@ -24,12 +25,15 @@ y4 =0
 
 
 for i in range (a1,b1):
-    x=((a1+(k*numberSlopes)+h)
+    x = ((a1+(k*numberSlopes)+h)
     y1 = eval(equation)
-    x=(a1+(k*numberSlopes)))
+    
+    x = (a1+(k*numberSlopes)))
     y2 = eval(equation)
-    x =((a1+(k*numberSlopes)+h)
+    
+    x = ((a1+(k*numberSlopes)+h)
     y3 = eval(equation)
+    
     x = (a1+(k*numberSlopes)))
     y4 = eval(equation)
     
