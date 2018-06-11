@@ -25,16 +25,16 @@ y4 =0
 
 
 for i in range (a1,b1):
-    x = ((a1+(k*numberSlopes)+h)
+    x = (a1+(k*numberSlopes)+h)
     y1 = eval(equation)
     
-    x = (a1+(k*numberSlopes)))
+    x = (a1+(k*numberSlopes))
     y2 = eval(equation)
     
-    x = ((a1+(k*numberSlopes)+h)
+    x = (a1+(k*numberSlopes)+h)
     y3 = eval(equation)
     
-    x = (a1+(k*numberSlopes)))
+    x = (a1+(k*numberSlopes))
     y4 = eval(equation)
     
     
