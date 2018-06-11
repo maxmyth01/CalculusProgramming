@@ -38,8 +38,8 @@ for i in range (a1,b1):
     y4 = eval(equation)
     
     
-    slope1 = y1-y2/(h)
-    slope2 = y3-y4/(h)
+    slope1 = (y1-y2)/(h)
+    slope2 = (y3-y4)/(h)
     if abs(slope1-slope2)>tollerance:
         print(a1)
     print(slope1)
