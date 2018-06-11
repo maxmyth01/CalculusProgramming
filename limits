@@ -5,7 +5,7 @@
 from math import *
 
 
-equation = input("Enter an equation")
+
 a1 = int(input("enter a start to a range"))
 b1 = int(input("enter a end to a range"))
 numberSlopes = 0.01
@@ -14,14 +14,28 @@ h = 0.0000000001
 slope1 = 0
 slope2 = 0
 k=0
-
+equation = input("Enter an equation")
+y1 =0
+y2 =0
+y3 =0
+y4 =0
 
 
 
 
 for i in range (a1,b1):
-    slope1 = eval(((a1+(k*numberSlopes)+h))-eval((a1+(k*numberSlopes))))/(h)
-    slope2 = eval(((a1+(k*numberSlopes)+h))-eval((a1+(k*numberSlopes))))/(h)
+    x=((a1+(k*numberSlopes)+h)
+    y1 = eval(equation)
+    x=(a1+(k*numberSlopes)))
+    y2 = eval(equation)
+    x =((a1+(k*numberSlopes)+h)
+    y3 = eval(equation)
+    x = (a1+(k*numberSlopes)))
+    y4 = eval(equation)
+    
+    
+    slope1 = y1-y2/(h)
+    slope2 = y3-y4/(h)
     if abs(slope1-slope2)>tollerance:
         print(a1)
     print(slope1)
