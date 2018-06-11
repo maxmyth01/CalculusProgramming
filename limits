@@ -6,8 +6,8 @@ from math import *
 
 
 equation = input("Enter an equation")
-a1 = float(input("enter a start to a range"))
-b1 = float(input("enter a end to a range"))
+a1 = int(input("enter a start to a range"))
+b1 = int(input("enter a end to a range"))
 numberSlopes = 0.01
 tollerance = 0.001
 h = 0.0000000001
@@ -16,12 +16,12 @@ slope2 = 0
 k=0
 
 for i in range (a1,b1):
-   slope1 = ((a1+(k*numberSlopes)+h)-(a1+(k*numberSlopes)))/(h)
-   slope2 = ((a1+(k*numberSlopes)+h)-(a1+(k*numberSlopes)))/(h)
-   if abs(slope1-slope2)>tollerance:
-       print(a1)
-   
-   k+=1
+    slope1 = ((a1+(k*numberSlopes)+h)-(a1+(k*numberSlopes)))/(h)
+    slope2 = ((a1+(k*numberSlopes)+h)-(a1+(k*numberSlopes)))/(h)
+    if abs(slope1-slope2)>tollerance:
+        print(a1)
+    print(slope1)
+    k+=1
    
    
 
