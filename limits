@@ -9,6 +9,8 @@ from math import *
 a1 = int(input("enter a start to a range"))
 b1 = int(input("enter a end to a range"))
 equation = input("Enter an equation")
+
+
 numberSlopes = 0.01
 tollerance = 10000
 h = 0.000000001
@@ -57,33 +59,3 @@ for i in range (0, total):
    
    
 
-"""
-x = float(input("Enter a point for the limit"))
-
-# Equation Format: aX^A+bx^B+cx^C+dx^D
-a = 1
-A = -1
-b = 0
-B = 0
-c = 0
-C = 0
-d = 0
-D = 0
-
-
-
-leftLimit = (a*((x-h)**A))+(b*((x-h)**B))+(c*((x-h)**C))+(d*((x-h)**D)) 
-atThePoint = (a*(x**A))+(b*(x**B))+(c*(x**C))+(d*(x**D)) 
-rightLimit = (a*((x+h)**A))+(b*((x+h)**B))+(c*((x+h)**C))+(d*((x+h)**D)) 
-print(eval(equation))
-
-print(atThePoint)
-print(leftLimit)
-print(rightLimit)
-
-
-
-if :
-    print("The limit does exist at p and is" )
-    
-"""
