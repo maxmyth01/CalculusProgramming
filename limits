@@ -25,9 +25,11 @@ y4 =0
 #doubble slash rounds down
 total = (b1-a1)//numberSlopes
 for i in range (0, total):
-    if (a1+((k+1)*numberSlopes)+h) == 0:
+    
+    if (a1+((k+1)*numberSlopes)+h) < 0.00000000001:
         print("skipped")
         k+=2
+        
     x = (a1+(k*numberSlopes)+h)
     y1 = eval(equation)
     
