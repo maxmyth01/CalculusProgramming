@@ -1,16 +1,25 @@
 #Max Low
 #6-7-18
-#Calculus Programming -- Have the User have a section to edit the function and then take the limit at a point through brute force
+#Calculus Programming -- Finds and identifies discontinuties and graph?
 
 from math import *
 
-x = int(input("Enter a point for the limit"))
-h = 0.0000000001
-equation = input("Enter an equation")
+x = float(input("Enter a point for the limit"))
 
+equation = input("Enter an equation")
+a1 = float(input("enter a start to a range"))
+b1 = float(input("enter a end to a range"))
+numberSlopes = 1000
+tollerance = 0.01
+h = 0.0000000001
+
+k=0
+for i in range (a1,b1):
+   
+   k+=1
+   
 
 # Equation Format: aX^A+bx^B+cx^C+dx^D
-
 a = 1
 A = -1
 b = 0
