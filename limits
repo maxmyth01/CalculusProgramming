@@ -15,9 +15,13 @@ slope1 = 0
 slope2 = 0
 k=0
 
+
+
+
+
 for i in range (a1,b1):
-    slope1 = ((a1+(k*numberSlopes)+h)-(a1+(k*numberSlopes)))/(h)
-    slope2 = ((a1+(k*numberSlopes)+h)-(a1+(k*numberSlopes)))/(h)
+    slope1 = eval(((a1+(k*numberSlopes)+h))-eval((a1+(k*numberSlopes))))/(h)
+    slope2 = eval(((a1+(k*numberSlopes)+h))-eval((a1+(k*numberSlopes))))/(h)
     if abs(slope1-slope2)>tollerance:
         print(a1)
     print(slope1)
