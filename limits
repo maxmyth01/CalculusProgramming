@@ -8,13 +8,13 @@ from math import *
 
 a1 = int(input("enter a start to a range"))
 b1 = int(input("enter a end to a range"))
+equation = input("Enter an equation")
 numberSlopes = 0.01
-tollerance = 0.000001
-h = 0.00000000001
+tollerance = 0.1
+h = 0.01
 slope1 = 0
 slope2 = 0
 k=0
-equation = input("Enter an equation")
 x = 0 
 y1 =0
 y2 =0
@@ -43,7 +43,7 @@ for i in range (0, total):
     
 
     if abs(slope1-slope2)>tollerance:
-        print(a1)
+        print(a1+(k*numberSlopes))
 
     print(slope1)
     print(slope2)
