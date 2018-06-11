@@ -23,7 +23,7 @@ y4 =0
 
 
 
-total = b1-al
+total = (b1-al)/numberSlopes
 for i in range (0, total):
     x = (a1+(k*numberSlopes)+h)
     y1 = eval(equation)
