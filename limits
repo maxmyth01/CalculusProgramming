@@ -10,12 +10,15 @@ a1 = int(input("enter a start to a range"))
 b1 = int(input("enter a end to a range"))
 equation = input("Enter an equation")
 
-
-numberSlopes = 0.01
-tollerance = 10000
-h = 0.000000001
 slope1 = 0
 slope2 = 0
+h = 0.000000001
+
+# between zero and one will find one hundred slope measurement, set scale
+numberSlopes = 0.01
+tollerance = 10000
+
+
 k=0
 x = 0 
 y1 =0
