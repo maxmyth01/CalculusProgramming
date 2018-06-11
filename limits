@@ -33,7 +33,7 @@ for i in range (0, total):
     
     if (a1+((k+1)*numberSlopes)+h) < 0.000000000000000000001:
         print("skipped")
-        k+=2
+        k+=6
         
     x = (a1+(k*numberSlopes)+h)
     y1 = eval(equation)
@@ -54,7 +54,7 @@ for i in range (0, total):
 
     if abs(slope1-slope2)>tollerance:
         print(a1+(k*numberSlopes))
-
+    print(a1+(k*numberSlopes))
     print(slope1)
     print(slope2)
     print(" ")
