@@ -9,7 +9,7 @@ from math import *
 a1 = int(input("enter a start to a range"))
 b1 = int(input("enter a end to a range"))
 numberSlopes = 0.01
-tollerance = 0.001
+tollerance = 0.01
 h = 0.0000000001
 slope1 = 0
 slope2 = 0
@@ -40,9 +40,14 @@ for i in range (0, total):
     
     slope1 = (y1-y2)/(h)
     slope2 = (y3-y4)/(h)
+    
+    """
     if abs(slope1-slope2)>tollerance:
         print(a1)
+    """
     print(slope1)
+    print(slope2)
+    print(" ")
     k+=1
    
    
