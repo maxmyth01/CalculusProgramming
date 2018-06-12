@@ -36,10 +36,7 @@ criticalPtorDiscontinuity = False
 total = (b1-a1)//numberSlopes
 for i in range (0, total):
     
-    if abs(a1+((k+1)*numberSlopes)+h) < 0.01: #if the abs of the next point is virtually zero skip over it to avoid often non-diffenercibly pts
-        print("criticalPtorDiscontinuity")
-        k+=2
-        criticalPtorDiscontinuity = True
+
         
     x = (a1+(k*numberSlopes)+h)
     y1 = eval(equation)
@@ -57,6 +54,10 @@ for i in range (0, total):
     slope1 = (y1-y2)/(h)
     slope2 = (y3-y4)/(h)
     
+    if slope1 < 0.01: #if the abs of the next point is virtually zero skip over it to avoid often non-diffenercibly pts
+        print("criticalPtorDiscontinuity within +/- 0.01")
+        k+=2
+        criticalPtorDiscontinuity = True
 
     if abs(slope1-slope2)>tollerance:
         print("vertical Asmptote")
