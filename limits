@@ -61,10 +61,11 @@ for i in range (0, total):
     tollerance = 0.7*slope2
     if abs(slope1-slope2)>abs(tollerance):
         print("vertical Asmptote")
+        print(a1+(k*numberSlopes))
         k+=2
         
         
-    print(a1+(k*numberSlopes))
+
     print(slope1)
     print(slope2)
     print(" ")
