@@ -17,7 +17,7 @@ h = 0.000000001
 
 # between zero and one will find one hundred slope measurement, set scale
 numberSlopes = 0.01
-tollerance = 5000
+tollerance = 10000
 
 #increases to continue cmoing the slope measurements down the function
 k=0
@@ -60,7 +60,7 @@ for i in range (0, total):
 
     if abs(slope1-slope2)>tollerance:
         print("vertical Asmptote")
-        k+=2
+        k+=1
         
         
     print(a1+(k*numberSlopes))
