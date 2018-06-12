@@ -62,12 +62,10 @@ for i in range (0, total):
     if abs(slope1-slope2)>abs(tollerance):
         print("vertical Asmptote")
         print(a1+(k*numberSlopes))
+        print(slope1)
+        print(slope2)
         k+=2
-        
-        
-    print(a1+(k*numberSlopes))
-    print(slope1)
-    print(slope2)
+
     print(" ")
     if criticalPtorDiscontinuity == False:
         k+=1
