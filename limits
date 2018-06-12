@@ -54,7 +54,7 @@ for i in range (0, total):
     slope1 = (y1-y2)/(h)
     slope2 = (y3-y4)/(h)
     
-    if slope1 < 0.01: #if the abs of the next point is virtually zero skip over it to avoid often non-diffenercibly pts
+    if abs(slope1) < 0.01: #if the abs of the next point is virtually zero skip over it to avoid often non-diffenercibly pts
         print("criticalPtorDiscontinuity within +/- 0.01")
         k+=2
         criticalPtorDiscontinuity = True
