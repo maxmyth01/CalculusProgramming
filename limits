@@ -17,7 +17,7 @@ h = 0.000000001
 
 # between zero and one will find one hundred slope measurement, set scale
 numberSlopes = 0.01
-tollerance = 10000
+tollerance = 0
 
 #increases to continue cmoing the slope measurements down the function
 k=0
@@ -57,10 +57,11 @@ for i in range (0, total):
     if abs(slope1) < 0.01: #if the abs of the next point is virtually zero skip over it to avoid often non-diffenercibly pts
         print("criticalPtorDiscontinuity within +/- 0.01")
         criticalPtorDiscontinuity = True
-
+    
+    tollerance = 0.05*slope2
     if abs(slope1-slope2)>tollerance:
         print("vertical Asmptote")
-        k+=1
+        k+=2
         
         
     print(a1+(k*numberSlopes))
