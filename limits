@@ -6,8 +6,8 @@ from math import *
 
 
 #defing the function and domain of examination
-a1 = int(input("enter a start to a range"))
-b1 = int(input("enter a end to a range"))
+a1 = float(input("enter a start to a range"))
+b1 = float(input("enter a end to a range"))
 equation = input("Enter an equation")
 
 #defining for the slope at the point and the sucessive point, h is used in the limit deffinition of a derivive
@@ -34,6 +34,7 @@ criticalPtorDiscontinuity = False
 
 #doubble slash rounds down
 total = (b1-a1)//numberSlopes
+total = int(total)
 for i in range (0, total):
     
     
