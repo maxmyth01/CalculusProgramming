@@ -55,12 +55,16 @@ for i in range (0, total):
     slope2 = (y3-y4)/(h)
     
     if abs(slope1) < 0.01: #if the abs of the next point is virtually zero skip over it to avoid often non-diffenercibly pts
-        print("criticalPtorDiscontinuity within +/- 0.01")
+        print("critical Pt or Discontinuity within +/- 0.01")
+        print(a1+(k*numberSlopes))
+        print(slope1)
+        print(slope2)
         criticalPtorDiscontinuity = True
+        
     
     tollerance = 0.7*slope2
     if abs(slope1-slope2)>abs(tollerance):
-        print("vertical Asmptote")
+        print("vertical Asmptote within +/- 0.01")
         print(a1+(k*numberSlopes))
         print(slope1)
         print(slope2)
