@@ -58,8 +58,8 @@ for i in range (0, total):
         print("criticalPtorDiscontinuity within +/- 0.01")
         criticalPtorDiscontinuity = True
     
-    tollerance = 0.05*slope2
-    if abs(slope1-slope2)>tollerance:
+    tollerance = 0.7*slope2
+    if abs(slope1-slope2)>abs(tollerance):
         print("vertical Asmptote")
         k+=2
         
