@@ -63,7 +63,7 @@ for i in range (0, total):
         criticalPtorDiscontinuity = True
         
     
-    tollerance = 0.7*slope2
+    tollerance = 0.7*slope2+10
     if abs(slope1-slope2)>abs(tollerance):
         print("vertical Asmptote within +/- 0.01")
         print(a1+(k*numberSlopes))
