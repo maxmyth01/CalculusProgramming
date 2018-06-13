@@ -84,7 +84,7 @@ while a1+(k*numberSlopes) <= b1:
         
     k+=1
     
-    
+    """
     if (eval(b1)-eval(b1-h)) > 0:
         print("The right end is a local Max")
     elif (eval(b1)-eval(b1-h)) < 0:
@@ -94,5 +94,5 @@ while a1+(k*numberSlopes) <= b1:
         print("The Lef end is a local Min")
     elif (eval(a1)-eval(a1+h)) < 0:
         print("The Left end is a local Max")
-        
+    """
 
