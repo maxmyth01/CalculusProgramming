@@ -70,8 +70,7 @@ while a1+(k*numberSlopes) <= b1:
         else:
             print("Only Crital no min or max")
         print(" ")
-            
-        
+    
     
     
     tollerance = 0.7*slope2
@@ -84,5 +83,16 @@ while a1+(k*numberSlopes) <= b1:
         k+=3
         
     k+=1
-   
+    
+    
+    if (eval(b1)-eval(b1-h))/h > 0:
+        print("The right end is a local Max")
+    elif (eval(b1)-eval(b1-h))/h < 0:
+        print("The right end is a local Min")
+        
+    if (eval(a1)-eval(a1+h))/h > 0:
+        print("The Lef end is a local Min")
+    elif (eval(a1)-eval(a1+h))/h < 0:
+        print("The Left end is a local Max")
+        
 
