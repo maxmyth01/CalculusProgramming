@@ -56,13 +56,14 @@ for i in range (0, total):
         print(a1+(k*numberSlopes))
         print(slope1)
         print(slope2)
-        print(" ")
         if slope1 < 0 and slope2 > 0:
             print("local min")
-        elif slope1 > 0 and slope2 <0:
+        elif slope1 > 0 and slope2 <0: # NEEDS TO USE PREVIOUS VALUES OTHERWISE ERROR, FIX
             print("local max")
         else:
             print("Only Crital no min or max")
+            
+        print(" ")
             
         
         
