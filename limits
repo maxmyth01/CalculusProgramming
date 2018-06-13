@@ -22,7 +22,7 @@ tollerance = 0
 #increases to continue cmoing the slope measurements down the function
 k=0
 
-#used for definig in recondin the y value of the equation using the eval function, value then used in limit definition of a derivite
+#used for definig in reconding the y value of the equation using the eval function, value then used in limit definition of a derivite
 x = 0 
 y00 = 0
 y0 = 0
@@ -34,7 +34,7 @@ y4 =0
 #doubble slash rounds down
 total = (b1-a1)//numberSlopes
 total = int(total)
-for i in range (0, total):
+while a1+(k*numberSlopes) <= b1:
     
     x = (a1+((k-1)*numberSlopes)+h)
     y00 = eval(equation)
@@ -65,15 +65,14 @@ for i in range (0, total):
         print(slope2)
         if slope0 < 0 and slope1 > 0:
             print("local min")
-        elif slope1 > 0 and slope2 <0: # NEEDS TO USE PREVIOUS VALUES OTHERWISE ERROR, FIX
+        elif slope1 > 0 and slope2 <0:
             print("local max")
         else:
             print("Only Crital no min or max")
-            
         print(" ")
             
         
-        
+    
     
     tollerance = 0.7*slope2+10
     if abs(slope1-slope2)>abs(tollerance):
