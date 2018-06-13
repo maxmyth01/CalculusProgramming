@@ -74,14 +74,14 @@ while a1+(k*numberSlopes) <= b1:
         
     
     
-    tollerance = 0.7*slope2+10
+    tollerance = 0.7*slope2
     if abs(slope1-slope2)>abs(tollerance):
         print("vertical Asmptote within +/- 0.01")
         print(a1+(k*numberSlopes))
         print(slope1)
         print(slope2)
         print(" ")
-        k+=2
+        k+=3
         
     k+=1
    
