@@ -54,7 +54,7 @@ for i in range (0, total):
     x = (a1+((k+1)*numberSlopes))
     y4 = eval(equation)
     
-    slope0 = (1y-y00)/(h)
+    slope0 = (y00-y0)/(h)
     slope1 = (y1-y2)/(h)
     slope2 = (y3-y4)/(h)
     
