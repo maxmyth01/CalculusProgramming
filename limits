@@ -57,6 +57,13 @@ for i in range (0, total):
         print(slope1)
         print(slope2)
         print(" ")
+        if slope1 < 0 and slope2 > 0:
+            print("local min")
+        elif slope1 > 0 and slope2 <0:
+            print("local max")
+        else:
+            print("Only Crital no min or max")
+            
         
         
     
