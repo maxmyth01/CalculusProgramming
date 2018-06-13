@@ -24,6 +24,8 @@ k=0
 
 #used for definig in recondin the y value of the equation using the eval function, value then used in limit definition of a derivite
 x = 0 
+1y = 0
+y0 = 0
 y1 =0
 y2 =0
 y3 =0
@@ -34,6 +36,11 @@ total = (b1-a1)//numberSlopes
 total = int(total)
 for i in range (0, total):
     
+    x = (a1+((k-1)*numberSlopes)+h)
+    1y = eval(equation)
+    
+    x = (a1+((k-1)*numberSlopes))
+    y0 = eval(equation)
     
     x = (a1+(k*numberSlopes)+h)
     y1 = eval(equation)
@@ -47,7 +54,7 @@ for i in range (0, total):
     x = (a1+((k+1)*numberSlopes))
     y4 = eval(equation)
     
-    
+    slope0 = (1y-y0)/(h)
     slope1 = (y1-y2)/(h)
     slope2 = (y3-y4)/(h)
     
@@ -58,7 +65,7 @@ for i in range (0, total):
         print(slope2)
         if slope1 < 0 and slope2 > 0:
             print("local min")
-        elif slope1 > 0 and slope2 <0: # NEEDS TO USE PREVIOUS VALUES OTHERWISE ERROR, FIX
+        elif slope1 > 0 and slope1 <0: # NEEDS TO USE PREVIOUS VALUES OTHERWISE ERROR, FIX
             print("local max")
         else:
             print("Only Crital no min or max")
