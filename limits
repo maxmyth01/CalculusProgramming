@@ -24,7 +24,7 @@ k=0
 
 #used for definig in recondin the y value of the equation using the eval function, value then used in limit definition of a derivite
 x = 0 
-1y = 0
+y00 = 0
 y0 = 0
 y1 =0
 y2 =0
@@ -37,7 +37,7 @@ total = int(total)
 for i in range (0, total):
     
     x = (a1+((k-1)*numberSlopes)+h)
-    1y = eval(equation)
+    y00 = eval(equation)
     
     x = (a1+((k-1)*numberSlopes))
     y0 = eval(equation)
@@ -54,7 +54,7 @@ for i in range (0, total):
     x = (a1+((k+1)*numberSlopes))
     y4 = eval(equation)
     
-    slope0 = (1y-y0)/(h)
+    slope0 = (1y-y00)/(h)
     slope1 = (y1-y2)/(h)
     slope2 = (y3-y4)/(h)
     
