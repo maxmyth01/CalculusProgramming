@@ -15,14 +15,15 @@ slope1 = 0
 slope2 = 0
 h = 0.000000001
 
-# between zero and one will find one hundred slope measurement, set scale
+# between a point of one unit it will find one hundred slope measurement, set scale
 numberSlopes = 0.01
 tollerance = 0
 
-#increases to continue cmoing the slope measurements down the function
+#increases to continue moving the slope measurements of 0.o1 down the function
 k=0
 
-#used for definig in reconding the y value of the equation using the eval function, value then used in limit definition of a derivite
+#used for defining in recording the y value of the equation, using the eval function
+#the value is then used in limit definition of a derivite
 x = 0 
 y00 = 0
 y0 = 0
