@@ -59,7 +59,7 @@ while a1+(k*numberSlopes) <= b1:
     slope1 = (y1-y2)/(h)
     slope2 = (y3-y4)/(h)
     
-    if abs(slope1) < 0.01: #if the abs of the next point is virtually zero skip over it to avoid often non-diffenercibly pts
+    if abs(slope1) < 0.01: 
         print("Critical Pt or Discontinuity within +/- 0.05")
         print(a1+(k*numberSlopes))
         print(slope1)
@@ -73,7 +73,7 @@ while a1+(k*numberSlopes) <= b1:
         print(" ")
     
     
-    
+    #if the abs of the next point is virtually zero skip over it to avoid often non-diffenercibly pts
     tollerance = 0.7*slope2
     if abs(slope1-slope2)>abs(tollerance) and abs(slope1-slope2) > 1:
         print("vertical Asmptote within +/- 0.05")
