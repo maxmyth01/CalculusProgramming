@@ -1,6 +1,6 @@
 #Max Low
 #6-7-18
-#Calculus Programming -- Finds and identifies discontinuties and graph?
+#Calculus Programming -- Finds and identifies vertical asymptotes and (critical points / min and max)
 
 from math import *
 
