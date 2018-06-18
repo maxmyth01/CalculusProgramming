@@ -95,13 +95,13 @@ if (endright-endright1)/h > 0:
 elif (endright-endright1)/h < 0:
     print("The right end is a local Min")
     
-x = b1
+x = a1
 endleft = eval(equation)
-x= b1-h
+x= a1-h
 endleft1 = eval(equation)
         
-if (endleft1- endleft)/h > 0:
+if (endleft- endleft1)/h > 0:
     print("The Left end is a local Min")
-elif (endleft1- endleft)/h < 0:
+elif (endleft- endleft1)/h < 0:
     print("The Left end is a local Max")
 
