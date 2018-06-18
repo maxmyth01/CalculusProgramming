@@ -100,8 +100,8 @@ endleft = eval(equation)
 x= b1-h
 endleft1 = eval(equation)
         
-if (endleft-endleft1)/h > 0:
+if (endleft1- endleft)/h > 0:
     print("The Left end is a local Min")
-elif (endleft-endleft1)/h < 0:
+elif (endleft1- endleft)/h < 0:
     print("The Left end is a local Max")
 
